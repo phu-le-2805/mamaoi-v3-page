@@ -4,7 +4,7 @@ export const site = {
   description:
     "Mommi Memory giúp mẹ ghi lại cữ bú, giấc ngủ, bỉm, sức khoẻ và những kỷ niệm đầu đời của con chỉ bằng một câu nói.",
   company: "MESHLABS",
-  email: "devops.allcode@gmail.com",
+  email: "phulealali@gmail.com",
   phone: "+84 328 814 589",
   phoneHref: "tel:+84328814589",
   address: "94 Hồ Nghinh, Tầng 5, phường An Hải, TP. Đà Nẵng, Việt Nam",
