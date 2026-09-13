@@ -68,16 +68,11 @@ export default function PrivacyPage() {
                 <td>Ngôn ngữ, số giây tự lưu, bật/tắt lưu âm thanh gốc, bé đang xem</td>
                 <td>Giữ trải nghiệm giống nhau trên mọi máy</td>
               </tr>
-              <tr>
-                <td>Chẩn đoán (tuỳ chọn)</td>
-                <td>Báo cáo lỗi khi ứng dụng gặp sự cố</td>
-                <td>Sửa lỗi — xem mục 5</td>
-              </tr>
             </tbody>
           </table>
         </div>
         <p>
-          Chúng tôi <strong>không</strong> thu thập: vị trí, danh bạ, lịch sử duyệt web, mã quảng cáo, dữ liệu sức khoẻ
+          Chúng tôi <strong>không</strong> thu thập: vị trí, danh bạ, lịch sử duyệt web, mã quảng cáo, báo cáo sự cố, dữ liệu sức khoẻ
           từ Apple Health / Google Fit, thông tin thanh toán (ứng dụng không có mua bán trong app).
         </p>
 
@@ -118,7 +113,7 @@ export default function PrivacyPage() {
               <tr>
                 <td>Supabase</td>
                 <td>Máy chủ lưu trữ và đồng bộ (bên xử lý dữ liệu thay chúng tôi)</td>
-                <td>Toàn bộ mục 2, trừ chẩn đoán</td>
+                <td>Toàn bộ mục 2</td>
                 <td>Không — đó là nơi dữ liệu của bạn được lưu</td>
               </tr>
               <tr>
@@ -129,15 +124,6 @@ export default function PrivacyPage() {
                   ngoại tuyến tiếng Việt
                 </td>
                 <td>Có: không dùng nút micro, gõ ghi chú thay thế. Ứng dụng báo trước khi cần mạng để nhận dạng</td>
-              </tr>
-              <tr>
-                <td>Firebase Crashlytics (tuỳ chọn)</td>
-                <td>Báo cáo sự cố</td>
-                <td>
-                  Loại lỗi, dấu vết mã nguồn, mã máy. <strong>Không</strong> gồm nội dung ký ức, email hay đường dẫn
-                  tệp
-                </td>
-                <td>Có — bản cài không cấu hình Firebase thì thành phần này tắt hoàn toàn</td>
               </tr>
               <tr>
                 <td>Apple App Store / Google Play</td>
@@ -232,8 +218,8 @@ export default function PrivacyPage() {
           recordings), classification corrections and app settings. Data lives on your device (the app
           works fully offline) and on our own Supabase project in {site.serverRegion}, protected by row-level security,
           a private storage bucket with 1-hour signed URLs, and HTTPS. Only you, through your own account, can see your diary. Apple/Google speech recognition receives audio only
-          when your device lacks offline Vietnamese recognition. Crash reports, if enabled, exclude entry content,
-          emails and file paths. No advertising, no tracking, no data sales. Deleted items are purged from the server
+          when your device lacks offline Vietnamese recognition.
+          No crash reporting, no advertising, no tracking, no data sales. Deleted items are purged from the server
           after 30 days; deleting all data or your account purges immediately. You can edit any entry and delete all data or your account in-app; email us for a copy of your data. The app is intended for adults. Contact: {site.email}.
         </p>
       </div>
