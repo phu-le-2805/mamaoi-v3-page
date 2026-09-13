@@ -3,7 +3,7 @@ export const site = {
   tagline: "Nhật ký em bé bằng giọng nói",
   description:
     "Mommi Memory giúp mẹ ghi lại cữ bú, giấc ngủ, bỉm, sức khoẻ và những kỷ niệm đầu đời của con chỉ bằng một câu nói.",
-  company: "MESHLABS",
+  company: "Mommi",
   email: "phulealali@gmail.com",
   phone: "+84 328 814 589",
   phoneHref: "tel:+84328814589",
