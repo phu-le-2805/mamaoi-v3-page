@@ -56,7 +56,6 @@ export default function HomePage() {
                 Xem tính năng →
               </a>
             </div>
-            <span className="badge">Sắp có mặt trên App Store &amp; Google Play</span>
           </div>
 
           <div className="hero-art">
