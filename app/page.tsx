@@ -16,7 +16,7 @@ const features = [
   { icon: "✨", title: "Tự sắp xếp", text: "App tự nhận ra danh mục, số liệu (ml, phút, °C, kg) và thời điểm, rồi tự lưu sau 3 giây." },
   { icon: "📸", title: "Ảnh, video, ghi chú", text: "Thêm ảnh, video ngắn đến 60 giây hoặc ghi chú gõ tay vào cùng một nhật ký." },
   { icon: "📅", title: "Feed và lịch", text: "Xem lại từng ngày theo dòng thời gian, hoặc nhìn cả tháng trên lịch ảnh." },
-  { icon: "👨‍👩‍👧", title: "Chia sẻ cho gia đình", text: "Mời bố, ông bà xem nhật ký bằng mã mời. Người được mời chỉ xem, không sửa." },
+  { icon: "🎧", title: "Nghe lại giọng mẹ", text: "Giữ bản ghi âm gốc bên cạnh mỗi ký ức để sau này nghe lại đúng giọng mẹ kể." },
   { icon: "📴", title: "Dùng được khi không có mạng", text: "Mọi thứ lưu trên máy trước, tự đồng bộ khi có mạng trở lại." },
 ];
 
@@ -31,11 +31,11 @@ const faqs = [
   },
   {
     q: "Ai xem được nhật ký của con?",
-    a: "Chỉ mẹ và những người mẹ chủ động mời bằng mã. Mã hết hạn sau 7 ngày và có thể thu hồi bất cứ lúc nào.",
+    a: "Chỉ tài khoản của mẹ. Chúng tôi không xem nội dung nhật ký, trừ khi mẹ gửi cho chúng tôi để được hỗ trợ.",
   },
   {
     q: "Tôi có thể xoá dữ liệu và tài khoản không?",
-    a: "Có. Vào Cài đặt → Vùng nguy hiểm để xoá toàn bộ dữ liệu hoặc xoá tài khoản. Mẹ cũng có thể xuất toàn bộ dữ liệu ra tệp trước khi xoá.",
+    a: "Có. Vào Cài đặt → Vùng nguy hiểm để xoá toàn bộ dữ liệu hoặc xoá tài khoản. Thao tác xác nhận hai bước và không hoàn tác được.",
   },
 ];
 
@@ -166,8 +166,8 @@ export default function HomePage() {
           <ul className="check-list card">
             <li>Không quảng cáo, không công cụ theo dõi</li>
             <li>Không bán dữ liệu cho bất kỳ ai</li>
-            <li>Người được mời chỉ xem, thu hồi được bất cứ lúc nào</li>
-            <li>Xuất toàn bộ dữ liệu, xoá tài khoản ngay trong app</li>
+            <li>Chỉ tài khoản của mẹ đọc được nhật ký, mọi kết nối dùng HTTPS</li>
+            <li>Xoá toàn bộ dữ liệu hoặc xoá tài khoản ngay trong app</li>
           </ul>
         </div>
       </section>

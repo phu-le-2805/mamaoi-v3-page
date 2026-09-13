@@ -22,7 +22,7 @@ export default function PrivacyPage() {
         <p>
           {site.name} là nhật ký em bé. Bạn nói, ứng dụng chuyển thành chữ và sắp xếp giúp bạn. Dữ liệu của bạn nằm
           trên máy bạn và trên máy chủ riêng của ứng dụng (Supabase, khu vực {site.serverRegion}) để đồng bộ giữa các
-          thiết bị và chia sẻ cho người bạn mời. Chúng tôi <strong>không</strong> bán dữ liệu,{" "}
+          thiết bị. Chúng tôi <strong>không</strong> bán dữ liệu,{" "}
           <strong>không</strong> dùng dữ liệu để quảng cáo, <strong>không</strong> có mạng quảng cáo hay công cụ theo
           dõi trong ứng dụng.
         </p>
@@ -69,11 +69,6 @@ export default function PrivacyPage() {
                 <td>Giữ trải nghiệm giống nhau trên mọi máy</td>
               </tr>
               <tr>
-                <td>Chia sẻ</td>
-                <td>Mã mời, danh sách người được mời xem</td>
-                <td>Cho phép bố, ông bà xem nhật ký</td>
-              </tr>
-              <tr>
                 <td>Chẩn đoán (tuỳ chọn)</td>
                 <td>Báo cáo lỗi khi ứng dụng gặp sự cố</td>
                 <td>Sửa lỗi — xem mục 5</td>
@@ -95,7 +90,7 @@ export default function PrivacyPage() {
           </li>
           <li>
             <strong>Trên máy chủ:</strong> Supabase project riêng của {site.name}, khu vực {site.serverRegion}. Cơ sở
-            dữ liệu bật Row Level Security: mỗi dòng chỉ đọc được bởi tài khoản là thành viên của bé đó. Tệp nằm trong
+            dữ liệu bật Row Level Security: mỗi dòng chỉ đọc được bởi tài khoản sở hữu hồ sơ bé đó. Tệp nằm trong
             một kho lưu trữ <strong>riêng tư</strong>; ứng dụng chỉ lấy được qua đường dẫn ký có hạn 1 giờ. Mọi kết
             nối dùng HTTPS.
           </li>
@@ -103,10 +98,9 @@ export default function PrivacyPage() {
 
         <h2>4. Ai được xem nhật ký của bạn</h2>
         <p>
-          Chỉ bạn, và những người bạn <strong>chủ động</strong> mời bằng mã 8 ký tự. Người được mời chỉ{" "}
-          <strong>xem</strong>, không sửa, không xoá, không thêm. Mã hết hạn sau 7 ngày và bạn thu hồi được bất cứ lúc
-          nào; thu hồi có hiệu lực trên máy của người đó ở lần đồng bộ kế tiếp. Chúng tôi không xem nội dung nhật ký
-          của bạn trừ khi bạn gửi cho chúng tôi để được hỗ trợ.
+          Chỉ bạn, qua tài khoản đăng nhập của mình trên các thiết bị của bạn. Chúng tôi không xem nội dung nhật ký của
+          bạn trừ khi bạn gửi cho chúng tôi để được hỗ trợ. Nếu sau này ứng dụng có tính năng chia sẻ, chính sách này sẽ
+          được cập nhật trước khi tính năng đó ra mắt.
         </p>
 
         <h2>5. Bên thứ ba</h2>
@@ -167,11 +161,10 @@ export default function PrivacyPage() {
           ứng dụng sẽ xoá ngay, không qua bước 30 ngày.
         </p>
 
-        <h2>7. Quyền của bạn, làm ngay trong ứng dụng</h2>
+        <h2>7. Quyền của bạn</h2>
         <ul>
           <li>
-            <strong>Lấy dữ liệu về:</strong> Cài đặt → Dữ liệu → Xuất dữ liệu (tệp zip chứa toàn bộ ký ức kèm mọi
-            ảnh/video/âm thanh) hoặc Sổ ký ức PDF theo tháng.
+            <strong>Lấy bản sao dữ liệu:</strong> gửi email cho chúng tôi từ địa chỉ đăng nhập của bạn.
           </li>
           <li>
             <strong>Xoá toàn bộ dữ liệu:</strong> Cài đặt → Vùng nguy hiểm → Xoá toàn bộ dữ liệu (xác nhận hai bước).
@@ -193,15 +186,14 @@ export default function PrivacyPage() {
         <p>
           {site.name} dành cho <strong>người lớn</strong> (bố mẹ, ông bà) ghi chép về con cháu của mình. Ứng dụng không
           nhắm tới trẻ em, không có nội dung dành cho trẻ em và không thu thập dữ liệu trực tiếp từ trẻ em. Thông tin về
-          em bé (tên, ngày sinh, ảnh) do người lớn chủ động nhập và do chính người đó kiểm soát, xuất và xoá. Nếu phát
+          em bé (tên, ngày sinh, ảnh) do người lớn chủ động nhập và do chính người đó kiểm soát và xoá. Nếu phát
           hiện dữ liệu do trẻ em dưới 13 tuổi tự cung cấp, chúng tôi sẽ xoá khỏi máy chủ ngay.
         </p>
 
         <h2>9. An toàn</h2>
         <p>
           Row Level Security ở tầng cơ sở dữ liệu, kho tệp riêng tư với đường dẫn ký có hạn, HTTPS cho mọi kết nối,
-          phiên đăng nhập trong kho khoá của hệ điều hành, mật khẩu tối thiểu 8 ký tự được băm. Mã mời có khoảng 10¹²
-          tổ hợp, hết hạn sau 7 ngày và giới hạn 5 lần nhập mỗi phút. Tuy vậy, không có phương thức truyền tải hay lưu
+          phiên đăng nhập trong kho khoá của hệ điều hành, mật khẩu tối thiểu 8 ký tự được băm. Tuy vậy, không có phương thức truyền tải hay lưu
           trữ nào an toàn tuyệt đối.
         </p>
 
@@ -237,14 +229,12 @@ export default function PrivacyPage() {
         <p className="muted">
           {site.name} is a voice-first baby diary published by {site.company}. We process your account email and
           password (hashed), baby profile, diary entries, attachments (photos, videos up to 60 s, original voice
-          recordings), classification corrections, app settings and invite records. Data lives on your device (the app
+          recordings), classification corrections and app settings. Data lives on your device (the app
           works fully offline) and on our own Supabase project in {site.serverRegion}, protected by row-level security,
-          a private storage bucket with 1-hour signed URLs, and HTTPS. Only you and people you invite (read-only,
-          revocable, codes expire after 7 days) can see your diary. Apple/Google speech recognition receives audio only
+          a private storage bucket with 1-hour signed URLs, and HTTPS. Only you, through your own account, can see your diary. Apple/Google speech recognition receives audio only
           when your device lacks offline Vietnamese recognition. Crash reports, if enabled, exclude entry content,
           emails and file paths. No advertising, no tracking, no data sales. Deleted items are purged from the server
-          after 30 days; deleting all data or your account purges immediately. You can export, edit and delete
-          everything in-app. The app is intended for adults. Contact: {site.email}.
+          after 30 days; deleting all data or your account purges immediately. You can edit any entry and delete all data or your account in-app; email us for a copy of your data. The app is intended for adults. Contact: {site.email}.
         </p>
       </div>
     </article>

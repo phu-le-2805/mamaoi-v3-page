@@ -57,8 +57,7 @@ export default function ContactPage() {
           <div className="card">
             <h3>Yêu cầu về dữ liệu</h3>
             <p className="muted">
-              Mẹ có thể tự xuất dữ liệu, xoá toàn bộ dữ liệu hoặc xoá tài khoản ngay trong ứng dụng (Cài đặt → Dữ liệu
-              / Vùng nguy hiểm). Nếu cần yêu cầu bằng văn bản, gửi email cho chúng tôi — chúng tôi trả lời trong vòng
+              Mẹ có thể tự xoá toàn bộ dữ liệu hoặc xoá tài khoản ngay trong ứng dụng (Cài đặt → Vùng nguy hiểm). Nếu cần bản sao dữ liệu hoặc yêu cầu bằng văn bản, gửi email cho chúng tôi — chúng tôi trả lời trong vòng
               30 ngày.
             </p>
             <p>
