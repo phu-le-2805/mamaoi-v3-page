@@ -1,8 +1,8 @@
 export const site = {
-  name: "Mommi Memory",
+  name: "Mommi",
   tagline: "Nhật ký em bé bằng giọng nói",
   description:
-    "Mommi Memory giúp mẹ ghi lại cữ bú, giấc ngủ, bỉm, sức khoẻ và những kỷ niệm đầu đời của con chỉ bằng một câu nói.",
+    "Mommi giúp mẹ ghi lại cữ bú, giấc ngủ, bỉm, sức khoẻ và những kỷ niệm đầu đời của con chỉ bằng một câu nói.",
   company: "Mommi",
   email: "phulealali@gmail.com",
   phone: "+84 328 814 589",

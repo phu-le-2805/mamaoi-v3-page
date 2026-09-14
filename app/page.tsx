@@ -22,7 +22,7 @@ const features = [
 
 const faqs = [
   {
-    q: "Mommi Memory có mất phí không?",
+    q: "Mommi có mất phí không?",
     a: "Ứng dụng miễn phí, không có quảng cáo và không có mua bán trong ứng dụng.",
   },
   {
@@ -61,7 +61,7 @@ export default function HomePage() {
           <div className="hero-art">
             <Image
               src="/mommi-logo.png"
-              alt="Mommi Memory"
+              alt="Mommi"
               width={1200}
               height={537}
               priority

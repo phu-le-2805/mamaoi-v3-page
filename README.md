@@ -1,4 +1,4 @@
-# Mommi Memory — landing page
+# Mommi — landing page
 
 Next.js (App Router). Trang: `/` giới thiệu, `/contact`, `/privacy`, `/terms`.
 
