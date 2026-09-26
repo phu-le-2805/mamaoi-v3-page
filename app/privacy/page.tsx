@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Chính sách bảo mật",
-  description: `Cách ${site.name} thu thập, lưu trữ và bảo vệ dữ liệu của bạn.`,
+  description: `Cách ${site.shortName} thu thập, lưu trữ và bảo vệ dữ liệu của bạn.`,
 };
 
 export default function PrivacyPage() {
@@ -20,7 +20,7 @@ export default function PrivacyPage() {
 
         <h2>1. Tóm tắt</h2>
         <p>
-          {site.name} là nhật ký em bé. Bạn nói, ứng dụng chuyển thành chữ và sắp xếp giúp bạn. Dữ liệu của bạn nằm
+          {site.shortName} là nhật ký em bé. Bạn nói, ứng dụng chuyển thành chữ và sắp xếp giúp bạn. Dữ liệu của bạn nằm
           trên máy bạn và trên máy chủ riêng của ứng dụng (Supabase, khu vực {site.serverRegion}) để đồng bộ giữa các
           thiết bị. Chúng tôi <strong>không</strong> bán dữ liệu,{" "}
           <strong>không</strong> dùng dữ liệu để quảng cáo, <strong>không</strong> có mạng quảng cáo hay công cụ theo
@@ -84,7 +84,7 @@ export default function PrivacyPage() {
             Keystore (Android). Ứng dụng <strong>chạy được đầy đủ khi không có mạng</strong>.
           </li>
           <li>
-            <strong>Trên máy chủ:</strong> Supabase project riêng của {site.name}, khu vực {site.serverRegion}. Cơ sở
+            <strong>Trên máy chủ:</strong> Supabase project riêng của {site.shortName}, khu vực {site.serverRegion}. Cơ sở
             dữ liệu bật Row Level Security: mỗi dòng chỉ đọc được bởi tài khoản sở hữu hồ sơ bé đó. Tệp nằm trong
             một kho lưu trữ <strong>riêng tư</strong>; ứng dụng chỉ lấy được qua đường dẫn ký có hạn 1 giờ. Mọi kết
             nối dùng HTTPS.
@@ -170,7 +170,7 @@ export default function PrivacyPage() {
 
         <h2>8. Dữ liệu về trẻ em</h2>
         <p>
-          {site.name} dành cho <strong>người lớn</strong> (bố mẹ, ông bà) ghi chép về con cháu của mình. Ứng dụng không
+          {site.shortName} dành cho <strong>người lớn</strong> (bố mẹ, ông bà) ghi chép về con cháu của mình. Ứng dụng không
           nhắm tới trẻ em, không có nội dung dành cho trẻ em và không thu thập dữ liệu trực tiếp từ trẻ em. Thông tin về
           em bé (tên, ngày sinh, ảnh) do người lớn chủ động nhập và do chính người đó kiểm soát và xoá. Nếu phát
           hiện dữ liệu do trẻ em dưới 13 tuổi tự cung cấp, chúng tôi sẽ xoá khỏi máy chủ ngay.
@@ -213,7 +213,7 @@ export default function PrivacyPage() {
 
         <h2>English summary</h2>
         <p className="muted">
-          {site.name} is a voice-first baby diary published by {site.company}. We process your account email and
+          {site.shortName} is a voice-first baby diary published by {site.company}. We process your account email and
           password (hashed), baby profile, diary entries, attachments (photos, videos up to 60 s, original voice
           recordings), classification corrections and app settings. Data lives on your device (the app
           works fully offline) and on our own Supabase project in {site.serverRegion}, protected by row-level security,

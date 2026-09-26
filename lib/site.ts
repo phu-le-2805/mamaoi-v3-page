@@ -1,9 +1,10 @@
 export const site = {
-  name: "Mommi",
+  name: "Mama ơi - Nhật ký em bé",
+  shortName: "Mama ơi",
   tagline: "Nhật ký em bé bằng giọng nói",
   description:
-    "Mommi giúp mẹ ghi lại cữ bú, giấc ngủ, bỉm, sức khoẻ và những kỷ niệm đầu đời của con chỉ bằng một câu nói.",
-  company: "Mommi",
+    "Mama ơi giúp mẹ ghi lại cữ bú, giấc ngủ, bỉm, sức khoẻ và những kỷ niệm đầu đời của con chỉ bằng một câu nói.",
+  company: "Mama ơi - Nhật ký em bé",
   email: "phulealali@gmail.com",
   phone: "+84 328 814 589",
   phoneHref: "tel:+84328814589",

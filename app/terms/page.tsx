@@ -25,7 +25,7 @@ export default function TermsPage() {
 
         <h2>1. Dịch vụ</h2>
         <p>
-          {site.name} là ứng dụng nhật ký giúp bố mẹ ghi lại hoạt động và kỷ niệm của con bằng giọng nói, ảnh, video và
+          {site.shortName} là ứng dụng nhật ký giúp bố mẹ ghi lại hoạt động và kỷ niệm của con bằng giọng nói, ảnh, video và
           ghi chú; tự phân loại nội dung và đồng bộ giữa các thiết bị. Ứng dụng hiện
           được cung cấp miễn phí và không có quảng cáo.
         </p>
@@ -69,7 +69,7 @@ export default function TermsPage() {
 
         <h2>5. Không thay thế tư vấn y tế</h2>
         <div className="note">
-          {site.name} là công cụ ghi chép. Các số liệu, danh mục và tuổi của bé do ứng dụng hiển thị chỉ mang tính tham
+          {site.shortName} là công cụ ghi chép. Các số liệu, danh mục và tuổi của bé do ứng dụng hiển thị chỉ mang tính tham
           khảo và <strong>không</strong> thay thế chẩn đoán hay lời khuyên của bác sĩ. Khi con có dấu hiệu bất thường,
           hãy liên hệ ngay cơ sở y tế.
         </div>

@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Liên hệ",
-  description: `Liên hệ đội ngũ ${site.name} để được hỗ trợ.`,
+  description: `Liên hệ đội ngũ ${site.shortName} để được hỗ trợ.`,
 };
 
 export default function ContactPage() {
@@ -71,7 +71,7 @@ export default function ContactPage() {
             <h2>Viết cho chúng tôi</h2>
             <p className="muted">Đơn vị phát hành: {site.company}</p>
           </div>
-          <a href={`mailto:${site.email}?subject=${encodeURIComponent(`[${site.name}] Hỗ trợ`)}`} className="btn btn-primary">
+          <a href={`mailto:${site.email}?subject=${encodeURIComponent(`[${site.shortName}] Hỗ trợ`)}`} className="btn btn-primary">
             Gửi email
           </a>
         </div>

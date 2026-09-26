@@ -1,4 +1,4 @@
-# Mommi — landing page
+# Mama ơi - Nhật ký em bé — landing page
 
 Next.js (App Router). Trang: `/` giới thiệu, `/contact`, `/privacy`, `/terms`.
 
